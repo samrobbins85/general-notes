@@ -192,7 +192,7 @@ function Lecture({
 							<a
 								className="flex content-center hover:underline text-blue-700"
 								href={
-									"https://github.com/samrobbins85/general-notes/blob/master/notes/" +
+									"https://github.com/samrobbins85/general-notes/blob/main/notes/" +
 									params.slug.join("/") +
 									".md"
 								}
