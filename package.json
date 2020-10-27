@@ -39,7 +39,7 @@
 		"utf8": "^3.0.0"
 	},
 	"devDependencies": {
-		"@next/bundle-analyzer": "^9.5.5",
+		"@next/bundle-analyzer": "^10.0.0",
 		"@tailwindcss/custom-forms": "^0.2.1",
 		"eslint": "^7.12.0",
 		"eslint-plugin-react": "^7.21.5",
