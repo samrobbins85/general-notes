@@ -30,8 +30,6 @@ import math from "@/lib/remark-math";
 import highlightCode from "@mapbox/rehype-prism";
 import footnotes from "remark-footnotes";
 import Layout from "@/components/layout";
-import Footer from "@/components/footer";
-import InnerHTML from "dangerously-set-html-content";
 const components = {
 	table: MyTable,
 	img: MyImg,
@@ -329,10 +327,6 @@ function Lecture({
 				main={<Main />}
 				sidebar={<Sidebar ref={node} tree={tree} slug={params.slug} />}
 				navbar={<NavBar toggleFunction={toggleSidebar} ref={node2} />}
-				footer={<Footer details={postData.details} />}
-				isFooter={
-					postData.details !== undefined && postData.details !== null
-				}
 				toggle={sidebarVisible}
 			/>
 		</>

@@ -20,7 +20,6 @@ export default function Layout(props) {
 					>
 						{props.main}
 					</div>
-					{props.isFooter && props.footer}
 				</div>
 			</div>
 		</div>
