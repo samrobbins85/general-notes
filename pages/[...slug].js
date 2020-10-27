@@ -192,7 +192,7 @@ function Lecture({
 							<a
 								className="flex content-center hover:underline text-blue-700"
 								href={
-									"https://github.com/samrobbins85/notes-site/blob/master/notes/" +
+									"https://github.com/samrobbins85/general-notes/blob/master/notes/" +
 									params.slug.join("/") +
 									".md"
 								}
@@ -303,10 +303,7 @@ function Lecture({
 						  ) + " | "
 						: "") + "Sam's Notes"}
 				</title>
-				<meta
-					name="description"
-					content="Notes from my course at Durham University"
-				/>
+				<meta name="description" content="Notes from my education" />
 				<meta
 					property="og:image"
 					content={`https://og.csnotes.me/**${escape(
