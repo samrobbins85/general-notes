@@ -1,0 +1,194 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	/* CSS for Docsearch */
+	@import url(https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css);
+	/* Prism CSS */
+
+	@import "prism-atom-dark.css";
+
+	/* CSS for Inter Font */
+
+	@import url("https://rsms.me/inter/inter.css");
+	html {
+		font-family: "Inter", sans-serif;
+		font-feature-settings: "frac";
+	}
+	@supports (font-variation-settings: normal) {
+		html {
+			font-family: "Inter var", sans-serif;
+			font-feature-settings: "frac";
+		}
+	}
+
+	@font-face {
+		font-family: "JetBrains Mono";
+		src: url("https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/eot/JetBrainsMono-Regular.eot")
+				format("embedded-opentype"),
+			url("https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2")
+				format("woff2"),
+			url("https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Regular.woff")
+				format("woff"),
+			url("https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/ttf/JetBrainsMono-Regular.ttf")
+				format("truetype");
+		font-weight: default;
+	}
+
+	span.overline-line {
+		border-color: #4a5568 !important;
+	}
+
+	/* CSS for the colours in code */
+
+	:root {
+		--color-code-green: #b5f4a5;
+		--color-code-yellow: #ffe484;
+		--color-code-purple: #d9a9ff;
+		--color-code-red: #ff8383;
+		--color-code-blue: #93ddfd;
+		--color-code-white: #fff;
+	}
+
+	/* Offset content by navbar */
+	.main-content {
+		height: calc(100vh - 3rem);
+	}
+
+	.math-display {
+		@apply overflow-x-auto;
+		@apply overflow-y-hidden;
+		@apply py-4;
+	}
+
+	/* Styling for anchor links */
+
+	.prose h1 a,
+	.prose h2 a,
+	.prose h3 a,
+	.prose h4 a,
+	.prose h5 a,
+	.prose h6 a {
+		@apply inline-block opacity-0 ml-1;
+	}
+
+	.prose h1:hover a,
+	.prose h2:hover a,
+	.prose h3:hover a,
+	.prose h4:hover a,
+	.prose h5:hover a,
+	.prose h6:hover a {
+		@apply opacity-100;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	sup {
+		scroll-margin-top: 6em;
+	}
+
+	.bmc-button img {
+		height: 34px !important;
+		width: 35px !important;
+		margin-bottom: 1px !important;
+		box-shadow: none !important;
+		border: none !important;
+		vertical-align: middle !important;
+	}
+	.bmc-button {
+		padding: 7px 15px 7px 10px !important;
+		line-height: 35px !important;
+		height: 51px !important;
+		text-decoration: none !important;
+		display: inline-flex !important;
+		color: #ffffff !important;
+		background-color: #ff813f !important;
+		border-radius: 8px !important;
+		border: 1px solid transparent !important;
+		font-size: 24px !important;
+		letter-spacing: 0.6px !important;
+		box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;
+		-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;
+		margin: 0 auto !important;
+		font-family: "Cookie", cursive !important;
+		-webkit-box-sizing: border-box !important;
+		box-sizing: border-box !important;
+	}
+	.bmc-button:hover,
+	.bmc-button:active,
+	.bmc-button:focus {
+		-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;
+		text-decoration: none !important;
+		box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;
+		opacity: 0.85 !important;
+		color: #ffffff !important;
+	}
+}
+
+@media (max-width: 768px) {
+	.algolia-autocomplete .ds-dropdown-menu {
+		max-width: calc(100vw - 32px) !important;
+		min-width: calc(100vw - 32px) !important;
+		width: calc(100vw - 32px) !important;
+		margin-left: 16px !important;
+	}
+	.algolia-autocomplete .algolia-docsearch-suggestion--content {
+		width: 100% !important;
+		padding-left: 0 !important;
+	}
+	.algolia-autocomplete .algolia-docsearch-suggestion--content:before {
+		display: none !important;
+	}
+	.algolia-autocomplete .algolia-docsearch-suggestion--subcategory-column {
+		display: none !important;
+	}
+}
+
+#carbonads {
+	@apply flex bg-white border border-gray-400 rounded;
+	max-width: 330px;
+}
+
+#carbonads span {
+	@apply relative block overflow-hidden;
+}
+
+#carbonads .carbon-wrap {
+	@apply flex;
+}
+
+.carbon-img {
+	@apply block m-0 leading-none;
+}
+
+.carbon-img img {
+	@apply block;
+}
+
+.carbon-text {
+	font-size: 13px;
+	padding: 10px;
+	line-height: 1.5;
+	text-align: left;
+}
+
+.carbon-poweredby {
+	@apply block text-center uppercase font-semibold text-gray-600 leading-none text-xs tracking-wide py-2 border-t border-gray-400;
+}
+
+/* #carbonads_1 {
+	display: none;
+} */
+
+div[id^="carbonads_"] {
+	display: none;
+}
+
+.adwrap > div {
+	@apply my-auto;
+}

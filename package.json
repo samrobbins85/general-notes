@@ -1,0 +1,51 @@
+{
+	"name": "notes-site",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+		"build": "next build",
+		"dev": "next",
+		"export": "next build && next export",
+		"start": "next start"
+	},
+	"dependencies": {
+		"@mapbox/rehype-prism": "^0.5.0",
+		"@tailwindcss/typography": "^0.2.0",
+		"autoprefixer": "^9.8.6",
+		"base-64": "^1.0.0",
+		"dangerously-set-html-content": "^1.0.8",
+		"directory-tree": "^2.2.5",
+		"gray-matter": "^4.0.2",
+		"katex": "^0.12.0",
+		"next": "^9.5.5",
+		"next-mdx-remote": "^1.0.0",
+		"pako": "^1.0.11",
+		"postcss-import": "^12.0.1",
+		"postcss-preset-env": "^6.7.0",
+		"react": "^16.14.0",
+		"react-dom": "^16.14.0",
+		"rehype-katex": "^4.0.0",
+		"remark": "^13.0.0",
+		"remark-autolink-headings": "^6.0.1",
+		"remark-emoji": "^2.1.0",
+		"remark-footnotes": "^3.0.0",
+		"remark-html": "^13.0.1",
+		"remark-math": "^4.0.0",
+		"remark-slug": "^6.0.0",
+		"retext": "^7.0.1",
+		"retext-smartypants": "^4.0.0",
+		"tailwindcss": "^1.9.6",
+		"unist-util-visit": "^2.0.3",
+		"utf8": "^3.0.0"
+	},
+	"devDependencies": {
+		"@next/bundle-analyzer": "^9.5.5",
+		"@tailwindcss/custom-forms": "^0.2.1",
+		"eslint": "^7.12.0",
+		"eslint-plugin-react": "^7.21.5",
+		"eslint-plugin-react-hooks": "^4.2.0",
+		"nextjs-sitemap-generator": "^1.1.1",
+		"prettier": "^2.1.2",
+		"prettier-plugin-package": "^1.2.0"
+	}
+}

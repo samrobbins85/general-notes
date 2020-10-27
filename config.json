@@ -1,0 +1,14 @@
+{
+	"index_name": "csnotes",
+	"sitemap_urls": ["http://csnotes.me/sitemap.xml"],
+	"stop_urls": [],
+	"selectors": {
+		"lvl0": ".title",
+		"lvl1": ".prose h1",
+		"lvl2": ".prose h2",
+		"lvl3": ".prose h3",
+		"lvl4": ".prose h4",
+		"lvl5": ".prose h5",
+		"text": ".prose p, li"
+	}
+}

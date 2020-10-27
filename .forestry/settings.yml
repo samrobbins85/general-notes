@@ -1,0 +1,72 @@
+---
+new_page_extension: md
+auto_deploy: false
+admin_path: 
+webhook_url: 
+sections:
+- type: heading
+  label: Year 1
+- type: directory
+  path: notes/Year_1/Algorithms_and_Data_Structures
+  label: Algorithms and Data Structures
+  create: all
+  match: "**/*"
+- type: directory
+  path: notes/Year_1/Computational_Thinking
+  label: Computational Thinking
+  create: all
+  match: "**/*"
+- type: directory
+  path: notes/Year_1/Computer_Systems
+  label: Computer Systems
+  create: all
+  match: "**/*"
+- type: directory
+  path: notes/Year_1/Maths_for_Computer_Science
+  label: Maths for Computer Science
+  create: all
+  match: "**/*"
+- type: directory
+  path: notes/Year_1/Programming
+  label: Programming
+  create: all
+  match: "**/*"
+- type: heading
+  label: Year 2
+- type: directory
+  path: notes/Year_2/Networks_and_Systems
+  label: Networks and Systems
+  create: all
+  match: "**/*"
+- type: directory
+  path: notes/Year_2/Programming_Paradigms
+  label: Programming Paradigms
+  create: all
+  match: "**/*"
+- type: directory
+  path: notes/Year_2/Software_Engineering
+  label: Software Engineering
+  create: all
+  match: "**/*"
+- type: directory
+  path: notes/Year_2/Software_Methodologies
+  label: Software Methodologies
+  create: all
+  match: "**/*"
+- type: directory
+  path: notes/Year_2/Theory_of_Computation
+  label: Theory of Computation
+  create: all
+  match: "**/*"
+upload_dir: public/img
+public_path: "/img"
+front_matter_path: ''
+use_front_matter_path: false
+file_template: ":filename:"
+build:
+  preview_output_directory: ".next"
+  install_dependencies_command: npm install
+  preview_docker_image: forestryio/node:12
+  mount_path: "/srv"
+  working_dir: "/srv"
+  instant_preview_command: npm run dev
