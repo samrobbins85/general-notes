@@ -12,12 +12,7 @@ export default function MyImg(props) {
 		);
 	} else {
 		return (
-			<img
-				className="mx-auto block"
-				src={props.src}
-				alt={props.alt}
-				unsized={true}
-			/>
+			<img className="mx-auto block" src={props.src} alt={props.alt} />
 		);
 	}
 }
