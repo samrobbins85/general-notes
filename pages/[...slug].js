@@ -15,11 +15,12 @@ import {
 	Corollary,
 	Lemma,
 	Problem,
-} from "@/components/mdx/admonitions";
-import Example from "@/components/mdx/admonitions/example";
-import Question from "@/components/mdx/admonitions/exercise/question";
-import Answer from "@/components/mdx/admonitions/exercise/answer";
-import Exercise from "@/components/mdx/admonitions/exercise/exercise";
+	Example,
+	Question,
+	Answer,
+	Exercise,
+} from "@samrobbins/admonition-components";
+
 import MyImg from "@/components/mdx/image";
 import MyTable from "@/components/mdx/table";
 import MyCode from "@/components/mdx/code";
@@ -59,9 +60,6 @@ function Lecture({
 	const router = useRouter();
 	const node = useRef();
 	const node2 = useRef();
-
-	const html =
-		'<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CEBIVKQN&placement=csnotesme" id="_carbonads_js"></script>';
 
 	function toggleSidebar() {
 		setSidebarVisible(!sidebarVisible);
