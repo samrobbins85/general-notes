@@ -11,7 +11,7 @@
 	"dependencies": {
 		"@mapbox/rehype-prism": "^0.5.0",
 		"@samrobbins/typography": "^1.1.0",
-		"@samrobbins/admonition-components": "^1.2.3",
+		"@samrobbins/admonition-components": "^1.4.0",
 		"@tailwindcss/forms": "^0.2.1",
 		"@tailwindcss/typography": "^0.3.1",
 		"autoprefixer": "^10.0.4",
