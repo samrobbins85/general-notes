@@ -24,7 +24,7 @@
 		"next": "^10.0.3",
 		"next-mdx-remote": "^2.0.1",
 		"pako": "^2.0.1",
-		"postcss": "^8.2.1",
+		"postcss": "^8.2.2",
 		"postcss-import": "^14.0.0",
 		"postcss-preset-env": "^6.7.0",
 		"react": "^16.14.0",
