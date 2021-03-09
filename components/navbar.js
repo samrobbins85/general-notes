@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import React from "react";
 
 const NavBar = React.forwardRef((props, ref) => {
 	useEffect(() => {
