@@ -55,3 +55,19 @@ Any finite field is of order $q=p^m$, where p is a prime number and m is an inte
 These have two different notations that mean the same thing, $GF(q)$ and $\mathbb{F}_q$
 
 ## Extension field
+
+![Primitive and Irreducible](/img/Uni/CaC/ECC/primitive.png)
+
+![Addition](/img/Uni/CaC/ECC/gf_addition.png)
+
+![Multiplication](/img/Uni/CaC/ECC/gf_mult.png)
+
+### Properties
+
+Multiplicative structure
+
+![Multiplicative cycle](/img/Uni/CaC/ECC/mult_cycle.png)
+
+Additive structure
+
+![Additive structure](/img/Uni/CaC/ECC/add_structure.png)
