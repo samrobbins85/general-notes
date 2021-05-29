@@ -58,7 +58,7 @@ export default function Homepage({ tree, sidebarVisible, setSidebarVisible }) {
 					</div>
 
 					<h2 className="text-lg text-gray-700 pt-6 text-center">
-						These are my notes from my learning
+						Notes taken for a variety of reasons
 					</h2>
 				</div>
 			</div>
