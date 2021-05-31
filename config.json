@@ -1,6 +1,6 @@
 {
 	"index_name": "csnotes",
-	"sitemap_urls": ["http://csnotes.me/sitemap.xml"],
+	"sitemap_urls": ["http://notes.samrobbins.uk/sitemap.xml"],
 	"stop_urls": [],
 	"selectors": {
 		"lvl0": ".title",
