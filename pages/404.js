@@ -11,7 +11,11 @@ export default function Custom404() {
 					<h1 className="text-center text-4xl font-medium">
 						Oops, that's a 404, looks like you're lost
 					</h1>
-					<img src="/home/MessyDoodle.svg" alt="Page not found doodle" className="w-full py-4" />
+					<img
+						src="/home/MessyDoodle.svg"
+						alt="Page not found doodle"
+						className="w-full py-4"
+					/>
 					<div className="flex justify-center">
 						<Link href="/">
 							<a className="text-3xl text-blue-600 hover:underline">

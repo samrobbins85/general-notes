@@ -6,8 +6,7 @@ import { getPostData } from "../lib/lecture";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import hydrate from "@/lib/hydrate";
-import renderToString from "next-mdx-remote/render-to-string";
+
 import {
 	Definition,
 	Important,
@@ -31,6 +30,8 @@ import math from "@/lib/remark-math";
 import highlightCode from "@mapbox/rehype-prism";
 import footnotes from "remark-footnotes";
 import Layout from "@/components/layout";
+import { serialize } from "next-mdx-remote/serialize";
+import { MDXRemote } from "next-mdx-remote";
 const components = {
 	table: MyTable,
 	img: MyImg,
@@ -182,7 +183,7 @@ function Lecture({
 				{(tab === "Notes" || !postData.exercise) && (
 					<div className="pb-6">
 						<div className="prose pb-6 mx-auto px-4">
-							{hydrate(source, { components })}
+							{<MDXRemote {...source} components={components} />}
 						</div>
 						<div className="flex justify-center">
 							<a
@@ -213,7 +214,12 @@ function Lecture({
 							{
 								<div className="pb-6">
 									<div className="prose pb-6 mx-auto px-4">
-										{hydrate(exercise, { components })}
+										{
+											<MDXRemote
+												{...exercise}
+												components={components}
+											/>
+										}
 									</div>
 									<div className="flex justify-center">
 										<a
@@ -335,7 +341,7 @@ export default Lecture;
 
 export async function getStaticProps({ params }) {
 	const postData = await getPostData(params);
-	const source = await renderToString(postData.contentHtml, {
+	const source = await serialize(postData.contentHtml, {
 		components: components,
 		mdxOptions: {
 			remarkPlugins: [slug, math, remarkSmartypants, footnotes],
@@ -344,7 +350,7 @@ export async function getStaticProps({ params }) {
 	});
 	var exercise;
 	if (postData.exercise) {
-		exercise = await renderToString(postData.exercise, {
+		exercise = await serialize(postData.exercise, {
 			components: components,
 			mdxOptions: {
 				remarkPlugins: [slug, math, remarkSmartypants, footnotes],
