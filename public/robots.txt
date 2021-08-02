@@ -1,5 +1,9 @@
-# Group 1
+# *
 User-agent: *
 Allow: /
 
-Sitemap: https://csnotes.me/sitemap.xml
+# Host
+Host: https://notes.samrobbins.uk
+
+# Sitemaps
+Sitemap: https://notes.samrobbins.uk/sitemap.xml

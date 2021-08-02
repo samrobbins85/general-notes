@@ -91,7 +91,7 @@ function Lecture({
 				renderMath.default();
 			});
 		}
-	}, [tab]);
+	}, [tab, postData]);
 
 	useEffect(() => {
 		if (postData.contentHtml !== undefined) {
