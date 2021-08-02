@@ -93,6 +93,14 @@ function Lecture({
 		}
 	}, [tab]);
 
+	useEffect(() => {
+		if (postData.contentHtml !== undefined) {
+			import("../lib/rendermath").then((renderMath) => {
+				renderMath.default();
+			});
+		}
+	}, []);
+
 	const handleClickOutside = (e) => {
 		if (
 			node.current.contains(e.target) ||
