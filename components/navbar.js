@@ -1,21 +1,6 @@
-import { useEffect } from "react";
 import React from "react";
 
 const NavBar = React.forwardRef((props, ref) => {
-	useEffect(() => {
-		if (window.docsearch) {
-			window.docsearch({
-				apiKey: "57c68f79baba1d8f5602a61b87902e6c",
-				indexName: "csnotes",
-				appId: "PEW75Q4NDD",
-				inputSelector: ".docsearch-input", // the selector of my search input
-			});
-		} else {
-			console.warn("Search has failed to load");
-			// do something here
-		}
-	}, []);
-
 	return (
 		<nav className="h-16 p-4 bg-white border-b border-gray-200 shadow flex justify-between">
 			<div className="flex">
@@ -41,11 +26,7 @@ const NavBar = React.forwardRef((props, ref) => {
 					<a href="/">{"Sam's Notes"}</a>
 				</span>
 			</div>
-			<input
-				type="search"
-				className="docsearch-input pt-2 pb-2 -mt-1 block h-10 rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-				placeholder="Search"
-			/>
+
 			<a
 				className="hidden sm:flex"
 				href="https://github.com/samrobbins85/general-notes"
