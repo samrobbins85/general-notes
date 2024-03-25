@@ -20,7 +20,7 @@
 		"base-64": "^1.0.0",
 		"directory-tree": "^2.2.5",
 		"gray-matter": "^4.0.2",
-		"katex": "^0.13.11",
+		"katex": "^0.16.10",
 		"next": "^14.0.0",
 		"next-mdx-remote": "^3.0.4",
 		"pako": "^2.0.4",
